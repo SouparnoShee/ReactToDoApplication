@@ -1,38 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+  background-color: rgb(151, 80, 218);
+  font-family: 'Roboto Mono', monospace;
+}
+
 .App {
   text-align: center;
+  margin-top: 80px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todoimg {
+  height: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Noting {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputs i {
+  margin-left: 20px;
+  height: 40px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.theinputs {
+  height: 40px;
+  width: 400px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.showItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.eachItems {
+  max-height: 60%;
+  max-width: 80%;
+  padding: 5px 20px;
+  background-color: rgb(90, 2, 172);
+  border-radius: 4px;
+  display: flex;
+  margin: 8px;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+}
+.eachItems i{
+  margin-left: 20px;
+}
+.eachItems:hover {
+  background-color: rgb(87, 4, 165);
+  color: #fff;
+}
+
+.btnrmv{
+  padding: 12px 25px;
+  background-color: rgb(31, 1, 59);
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btnrmv:hover{
+  background-color: rgb(224, 191, 255);
+  color: #000;
+  outline: none;
+}
+
+.smily{
+  margin-top: 50px;
+}
+
+.smilyemo{
+  height: 200px;
+  
+}
+
+@media(max-width:440px) {
+  .inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .iconofinput{
+    margin: 50px 0px;
+  }
+  .theinputs{
+    width: 220px;
   }
 }
